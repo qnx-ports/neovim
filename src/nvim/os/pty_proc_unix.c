@@ -21,6 +21,8 @@
 # include <sys/stream.h>
 # include <sys/syscall.h>
 # include <unistd.h>
+#elif defined(__QNX__)
+# include <unix.h>
 #else
 # include <pty.h>
 #endif
